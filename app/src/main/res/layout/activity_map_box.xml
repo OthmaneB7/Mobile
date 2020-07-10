@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.example.bariki_othmane.MapBox"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+
+    >
+    <!-- tools:openDrawer="start" -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        mapbox:itemIconTint="@color/map_water"
+        mapbox:headerLayout="@layout/menu_header"
+        android:background="#FDFCFC"
+        mapbox:itemShapeFillColor="@color/white"
+        mapbox:itemIconSize="30dp"
+        style="@style/navigation"
+        mapbox:menu="@menu/main_menu"/>
+
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="33.542398173677725"
+        mapbox:mapbox_cameraTargetLng="-7.570630192622134"
+        mapbox:mapbox_cameraZoom="10.58" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_on_top_of_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/menu_icon"
+            android:layout_width="60dp"
+            android:elevation="8dp"
+            android:outlineSpotShadowColor="@color/dark_grey"
+            android:translationZ="8dp"
+            android:layout_height="60dp"
+            android:src="@drawable/menu_icon"
+            />
+    </com.mapbox.mapboxsdk.maps.MapView>
+</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

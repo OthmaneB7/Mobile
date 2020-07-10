@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bariki_othmane.mdpOublier2"
+    android:background="@drawable/gradiant"
+    android:padding="25dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_white"
+            android:padding="5dp"
+            android:onClick="back_To_mdp1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="faites une sélection"
+            android:textAllCaps="true"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/bluet"
+            android:layout_marginTop="25dp"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/light"
+            android:text="@string/selectContact"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/icon_mobile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mobile"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/text_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Via SMS :"
+                android:textAllCaps="true"
+                android:fontFamily="@font/chelsea"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/icon_mobile"
+
+                />
+            <TextView
+                android:id="@+id/num_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+212693727277"
+                android:textAllCaps="true"
+                android:fontFamily="@font/mlight"
+                android:textColor="@color/bluet"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:layout_below="@+id/text_mobile"
+                android:layout_toRightOf="@+id/icon_mobile"
+
+                />
+
+            <Button
+
+                android:layout_width="331dp"
+                android:layout_height="164dp"
+                android:backgroundTint="@android:color/transparent" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/transparent"
+                />
+
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/email_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Via EMAIL :"
+                android:textAllCaps="true"
+                android:fontFamily="@font/chelsea"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/icon_email"
+
+                />
+            <TextView
+                android:id="@+id/email_ex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Othmane.bariki@gmail.com"
+                android:textAllCaps="true"
+                android:fontFamily="@font/mlight"
+                android:textColor="@color/bluet"
+                android:layout_marginTop="25dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/text_email"
+                android:layout_toRightOf="@+id/icon_email"
+
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</ScrollView>

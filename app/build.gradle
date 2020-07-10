@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.example.bariki_othmane"
+        minSdkVersion 16
+        multiDexEnabled true
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //map
+
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:5.2.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-core:2.0.1'
+
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.firebaseui:firebase-ui-storage:6.2.0'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    def lottieVersion = "3.4.0"
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.google.android.libraries.places:places:2.3.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.hbb20:ccp:2.3.1'
+    //OTP pin view design
+    implementation 'com.chaos.view:pinview:1.4.3'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+}

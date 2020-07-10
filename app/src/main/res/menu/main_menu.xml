@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/user"
+
+            />
+        <item android:id="@+id/nav_aide"
+            android:title="Aides"
+            android:icon="@drawable/qmark"
+
+            />
+        <item android:id="@+id/nav_vehicule"
+            android:title="véhicule"
+            android:icon="@drawable/nav_truck"
+            />
+
+        <item android:id="@+id/nav_logout"
+            android:title="déconnexion"
+            android:icon="@drawable/logout"
+            />
+
+
+
+
+
+</menu>

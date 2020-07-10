@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">NearLiver</string>
+    <string name="bienvenue_dans_stm">Bienvenue dans STM</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="date">Date de naissance</string>
+    <string name="tel">Numéro de téléphone</string>
+    <string name="email">Email</string>
+    <string name="genre">Genre</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="mdp2">Confirmer le mot de passe</string>
+    <string name="username" translatable="false">Nom d\'utilisateur</string>
+    <string name="slogan1">Facile</string>
+    <string name="slogan2">Rapide</string>
+    <string name="slogan3">Sécurisé</string>
+    <string name="blaka" transtalable="false">Numéro d\'immatriculation</string>
+    <string name="CIN">Numéro d\'identité</string>
+    <string name="tonnage">Poids véhicule</string>
+    <string name="matus">MATUS</string>
+    <string-array name="vehicule">
+        <item>Pick up</item>
+        <item>Camion</item>
+    </string-array>
+    <string name="recupEmail">Entrer l\'Email dont le mot de passe vous sera envoyé</string>
+    <string name="selectContact">selectionnez le contact avec quoi vous désirez réinitialiser le mot de passe </string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="access_token">pk.eyJ1IjoibWF0dXNzZmUiLCJhIjoiY2tiNW8zNzhzMHJnODJ5bzZ4ZTczbzlydCJ9.EE5FCmoOrYFo3jwav2eILA</string>
+    <string name="rv_directions_route_card_name">souhail lebbar</string>
+    <string name="rv_directions_route_available_table_info">#localisation01</string>
+    <string name="mapUrl">mapbox://styles/matussfe/ckb6wf2h50dhm1jmpzv0bajq1</string>
+    <string name="user_location_permission_not_granted">permission non garantie</string>
+    <string name="user_location_permission_explanation">j\'autorise l\'utilisation de ma position</string>
+    <string name="new_location">new_location</string>
+
+
+
+</resources>
